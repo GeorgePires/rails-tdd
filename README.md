@@ -2,7 +2,7 @@
 
 ### Conteúdo do curso
   - [x] Conceitos iniciais 
-  - [] RSpec
+  - [X] RSpec - fundamentals
   - [] FactoryBot e VCR
   - [] Models e Controllers
   - [] Views com Capybara
