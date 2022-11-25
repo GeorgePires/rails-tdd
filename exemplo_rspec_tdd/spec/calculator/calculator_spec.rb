@@ -7,15 +7,18 @@
 require 'calculator'
 
 describe Calculator do
-  it 'sum 2 numbers' do
-    calc = described_class.new
-    result = calc.sum(2, 3)
-    expect(result).to eq(5)
+  context '#sum' do
+    it 'sum 2 numbers' do
+      result = subject.sum(2, 3)
+      expect(result).to eq(5)
+    end
   end
 
-  it 'multiply 2 numbers' do
-    calc = described_class.new
-    result = calc.multiply(2, 3)
-    expect(result).to eq(6)
+  context '#multiply' do
+    it 'multiply 2 numbers' do
+      calc = described_class.new
+      result = calc.multiply(2, 3)
+      expect(result).to eq(6)
+    end
   end
 end
