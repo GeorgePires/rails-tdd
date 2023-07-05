@@ -12,6 +12,11 @@ describe Calculator do
       result = subject.sum(2, 3)
       expect(result).to eq(5)
     end
+
+    it 'use sum method for 2 negative numbers' do
+      result = subject.sum(-5, 7)
+      expect(result).to eq(2)
+    end
   end
 
   context '#multiply' do
